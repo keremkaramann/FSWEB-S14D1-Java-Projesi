@@ -3,11 +3,11 @@ package com.workintech.inheritance.company;
 import java.util.Arrays;
 
 public class HRManager extends Employee {
-    private JuniorDeveloper[] juniors;
+    private JuniorDevelepor[] juniors;
     private MidDeveloper[] mids;
     private SeniorDeveloper[] seniors;
 
-    public HRManager(long id, String name, double salary, JuniorDeveloper[] juniors, MidDeveloper[] mids, SeniorDeveloper[] seniors) {
+    public HRManager(long id, String name, double salary, JuniorDevelepor[] juniors, MidDeveloper[] mids, SeniorDeveloper[] seniors) {
         super(id, name, salary);
         this.juniors = juniors;
         this.mids = mids;
@@ -21,7 +21,7 @@ public class HRManager extends Employee {
     }
 
     //TODO BUNU TEKE İNDİR
-    public void addEmployee(int index, JuniorDeveloper junior) {
+    public void addEmployee(int index, JuniorDevelepor junior) {
         try {
             if (juniors[index] == null) {
                 juniors[index] = junior;

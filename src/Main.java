@@ -1,6 +1,7 @@
 import com.workintech.inheritance.*;
 import com.workintech.inheritance.company.HRManager;
 
+import com.workintech.inheritance.company.JuniorDevelepor;
 import com.workintech.inheritance.company.MidDeveloper;
 import com.workintech.inheritance.company.SeniorDeveloper;
 
@@ -43,28 +44,27 @@ public class Main {
 
         System.out.println("cuboid.volume= " + cuboid.getVolume());
         System.out.println("*************");
-
-        JuniorDeveloper junior1 = new JuniorDeveloper(1, "Mehmet Ali");
-        JuniorDeveloper junior2 = new JuniorDeveloper(2, "Gulbeyaz");
+        JuniorDevelepor junior1 = new JuniorDevelepor(1, "Ali", 123121412);
+        JuniorDevelepor junior2 = new JuniorDevelepor(1, "Ali", 12);
         junior1.work();
         junior2.work();
         System.out.println(junior1);
         System.out.println(junior2);
 
-        MidDeveloper mid1 = new MidDeveloper(3, "Ahmet");
-        MidDeveloper mid2 = new MidDeveloper(4, "Emra");
+        MidDeveloper mid1 = new MidDeveloper(3, "Joe", 424323);
+        MidDeveloper mid2 = new MidDeveloper(4, "Jonothan the third", 123123);
         mid1.work();
         mid2.work();
         System.out.println(mid1);
         System.out.println(mid2);
 
-        SeniorDeveloper senior1 = new SeniorDeveloper(5, "Mustafa");
+        SeniorDeveloper senior1 = new SeniorDeveloper(5, "Mufasa", 12424);
         senior1.work();
         System.out.println(senior1);
 
         System.out.println("************************");
-        HRManager hrManager = new HRManager(6, "Dogancan",
-                new JuniorDeveloper[5], new MidDeveloper[2], new SeniorDeveloper[1]);
+        HRManager hrManager = new HRManager(6, "Dogancan",899999,
+                new JuniorDevelepor[5], new MidDeveloper[2], new SeniorDeveloper[1]);
         hrManager.work();
         hrManager.addEmployee(0, junior1);
         hrManager.addEmployee(1, junior2);
